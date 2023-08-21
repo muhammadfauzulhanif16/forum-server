@@ -10,7 +10,7 @@ const replies = require('../../Interfaces/http/api/replies')
 
 const createServer = async (container) => {
   const server = Hapi.server({
-    host: process.env.NODE_ENV !== 'production' ? process.env.HOST : '0.0.0.0',
+    host: process.env.HOST,
     port: process.env.PORT,
     routes: {
       cors: {
