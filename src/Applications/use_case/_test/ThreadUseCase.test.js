@@ -92,7 +92,6 @@ describe('ThreadUseCase', () => {
     )
 
     const result = await threadUseCase.getThread('thread-123')
-    console.log(result)
 
     expect(mockThreadRepository.verifyAvailableThread).toBeCalledWith(
       'thread-123'
